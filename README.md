@@ -4,3 +4,5 @@ This project examines the state-wise and year-wise contributions of the individu
 
 The base dataset sourced from the FEC of USA that consists of the contributor’s information and the committee’s details was preprocessed and cleaned to extract columns such as
 contributor’s state and contribution amount to compile the state-wise total contribution of individuals for 2022. The American Community Survey datasets relating to the estimated figures of urban and rural population of each state was used to gauge the urbanized population percentage. The educational attainment dataset containing the age-wise level of education achieved by the people was used to determine the percentage of the population who are 18 years and over and have a Bachelor’s degree or higher qualification.
+
+![image](https://github.com/user-attachments/assets/30fb3584-6c66-47c3-9942-f6b000b44555)
