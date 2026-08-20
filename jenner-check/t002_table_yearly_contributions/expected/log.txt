@@ -1,0 +1,207 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA contribution_data_1
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote contribution_data_1 (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contributions
+
+
+NOTE: Read 7 rows from contribution_data_1.
+NOTE: Wrote contributions (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contribution_data_2
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote contribution_data_2 (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contributions
+
+
+NOTE: Read 7 rows from contributions.
+NOTE: Read 7 rows from contribution_data_2.
+NOTE: Wrote contributions (14 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contribution_data_3
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote contribution_data_3 (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contributions
+
+
+NOTE: Read 14 rows from contributions.
+NOTE: Read 7 rows from contribution_data_3.
+NOTE: Wrote contributions (21 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contribution_data_4
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote contribution_data_4 (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contributions
+
+
+NOTE: Read 21 rows from contributions.
+NOTE: Read 7 rows from contribution_data_4.
+NOTE: Wrote contributions (28 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contribution_data_5
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote contribution_data_5 (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contributions
+
+
+NOTE: Read 28 rows from contributions.
+NOTE: Read 7 rows from contribution_data_5.
+NOTE: Wrote contributions (35 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contribution_data_6
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 7 rows from DATALINES.
+NOTE: Wrote contribution_data_6 (7 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA contributions
+
+
+NOTE: Read 35 rows from contributions.
+NOTE: Read 7 rows from contribution_data_6.
+NOTE: Wrote contributions (42 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table total_contributions_by_year created.
+NOTE: PROC SQL statement used.
+NOTE: DATA total_contributions_by_year
+
+
+NOTE: Read 6 rows from total_contributions_by_year.
+NOTE: Wrote total_contributions_by_year (6 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA income_data
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 1 rows from DATALINES.
+NOTE: Wrote income_data (1 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA total_row_dataset
+
+
+NOTE: Read 1 rows from income_data.
+NOTE: Wrote total_row_dataset (1 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC TRANSPOSE data=total_row_dataset
+
+NOTE: Created 6 rows.
+NOTE: Output written to /tmp/work/r_b567f151c6c04238b15bb153d100ebb2/work/03867c1e-2cd1-4a2f-8adc-0da7dba6dd29/transposed_data1.avro.
+NOTE: DATA without_first_row
+
+
+NOTE: Read 6 rows from transposed_data1.
+NOTE: Wrote without_first_row (5 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA new_dataset
+
+
+NOTE: Read 5 rows from without_first_row.
+NOTE: Wrote new_dataset (5 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA poverty_data
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 1 rows from DATALINES.
+NOTE: Wrote poverty_data (1 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA total_row_dataset1
+
+
+NOTE: Read 1 rows from poverty_data.
+NOTE: Wrote total_row_dataset1 (1 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC TRANSPOSE data=total_row_dataset1
+
+NOTE: Created 6 rows.
+NOTE: Output written to /tmp/work/r_b567f151c6c04238b15bb153d100ebb2/work/03867c1e-2cd1-4a2f-8adc-0da7dba6dd29/transposed_data2.avro.
+NOTE: DATA without_first_row1
+
+
+NOTE: Read 6 rows from transposed_data2.
+NOTE: Wrote without_first_row1 (5 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA new_dataset1
+
+
+NOTE: Read 5 rows from without_first_row1.
+NOTE: Wrote new_dataset1 (5 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+WARNING: Variable report_year already exists on file WORK.JOINED_DATA1.
+NOTE: Table joined_data1 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SORT data=joined_data1
+
+NOTE: Read 5 rows from joined_data1.
+NOTE: Wrote joined_data1 (5 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC PRINT data=joined_data1
+
+NOTE: PROC PRINT completed: 5 observations printed, 5 variables

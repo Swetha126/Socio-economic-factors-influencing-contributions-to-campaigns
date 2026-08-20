@@ -1,0 +1,92 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA work.imported_data
+
+NOTE: Processing inline DATALINES (8 lines)
+
+NOTE: Read 8 rows from DATALINES.
+NOTE: Wrote work.imported_data (8 rows, 21 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table total_contributions_by_state created.
+NOTE: PROC SQL statement used.
+NOTE: DATA state_mapping
+
+NOTE: Processing inline DATALINES (8 lines)
+
+NOTE: Read 8 rows from DATALINES.
+NOTE: Wrote state_mapping (8 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table total_contributions created.
+NOTE: PROC SQL statement used.
+NOTE: DATA work.edu_data
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 1 rows from DATALINES.
+NOTE: Wrote work.edu_data (1 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table edu_data1 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC TRANSPOSE data=edu_data1
+
+NOTE: Created 8 rows.
+NOTE: Output written to /tmp/work/r_b09f74fd4eb74597a682f0bb049e09c3/work/b8223c8c-db02-436c-be46-2e93626fde4e/education_data.avro.
+NOTE: DATA updated_data
+
+NOTE: Numeric values have been converted to character values at the places given by: (Line):(Column).
+
+NOTE: Read 8 rows from education_data.
+NOTE: Wrote updated_data (8 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.urb_data
+
+NOTE: Processing inline DATALINES (1 lines)
+
+NOTE: Read 1 rows from DATALINES.
+NOTE: Wrote work.urb_data (1 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table urb_data1 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC TRANSPOSE data=urb_data1
+
+NOTE: Created 8 rows.
+NOTE: Output written to /tmp/work/r_b09f74fd4eb74597a682f0bb049e09c3/work/b8223c8c-db02-436c-be46-2e93626fde4e/urban_data.avro.
+NOTE: DATA updated_data1
+
+
+NOTE: Read 8 rows from urban_data.
+NOTE: Wrote updated_data1 (8 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+WARNING: Variable contributor_state already exists on file WORK.MERGED_DATA.
+NOTE: Table merged_data created.
+NOTE: PROC SQL statement used.
+NOTE: ODS Graphics settings reset to defaults.
+NOTE: ODS Graphics image-name index reset.
+NOTE: ODS Graphics is ON (width=10in, height=5in, format=SVG).
+NOTE: PROC SGPLOT data=merged_data
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg
+NOTE: ODS Graphics settings reset to defaults.
+NOTE: ODS Graphics image-name index reset.
+NOTE: ODS Graphics is ON (width=640px, height=480px, format=SVG).
