@@ -1,0 +1,17 @@
+{
+  "_captured_at": "2026-08-20T04:50:00Z",
+  "_captured_run_id": "r_b09f74fd4eb74597a682f0bb049e09c3",
+  "status": "ok",
+  "exit_code": 1,
+  "log_contains": [
+    "NOTE: Wrote work.imported_data (8 rows, 21 columns).",
+    "NOTE: Table total_contributions created.",
+    "NOTE: Table merged_data created.",
+    "NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": ["Variable contributor_state already exists on file WORK.MERGED_DATA."]
+  }
+}

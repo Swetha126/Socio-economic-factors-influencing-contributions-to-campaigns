@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_table_yearly_contributions",
+  "source_file": "Table.sas",
+  "source_blob_sha": "efaf36102a71176cdb6195e00dd0caa400c42054",
+  "source_commit": "48384c49d3451d8ea4a236897c2d068b60573041",
+  "notes": "Table.sas defines %combine_contributions, a %do-loop macro that originally imported six yearly Wyoming FEC contribution CSVs via PROC IMPORT, appended contribution_receipt_amount/report_year, then joined the yearly totals against mean-income and poverty-status CSV extracts (PROC TRANSPOSE + PROC SQL join + PROC SORT). All eight external CSV files are replaced with fabricated inline DATALINES of the same shape (7 synthetic contribution amounts per year x 6 years, one income row, one poverty row) so the macro loop and the join/transpose/sort logic run unmodified. Added a trailing PROC PRINT (not in the original) to surface the joined result as bundle output. No real FEC records are included."
+}

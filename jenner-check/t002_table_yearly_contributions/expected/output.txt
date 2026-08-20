@@ -1,0 +1,8 @@
+
+report_year  total_contribution  number_contribution  mean_income  below_poverty_level
+       2018                2070                    7        55600                 10.9
+       2019                2070                    7        57100                 10.5
+       2020                2070                    7        58300                 11.8
+       2021                2070                    7        60250                 11.1
+       2022                2070                    7        62800                 10.2
+

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_graph_state_contributions",
+  "source_file": "Graph.sas",
+  "source_blob_sha": "70465e9d030b714582fdd33eedb20e22a803b924",
+  "source_commit": "48384c49d3451d8ea4a236897c2d068b60573041",
+  "notes": "Graph.sas builds a state-wise view of total campaign contributions overlaid with educational attainment % and urban population % (PROC SQL joins + PROC TRANSPOSE + PROC SGPLOT dual-axis bar/line chart). Original read a raw FEC individual-contribution extract via INFILE and two Census/ACS CSV exports via PROC IMPORT; all three are replaced here with small fabricated inline DATALINES of the same column shape (8 synthetic contributor rows, 8 states) so the PROC SQL/TRANSPOSE/SGPLOT logic runs unmodified. No real donor names or FEC records are included -- ContributorName values are invented for this bundle."
+}

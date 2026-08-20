@@ -1,0 +1,17 @@
+{
+  "_captured_at": "2026-08-20T04:55:00Z",
+  "_captured_run_id": "r_b567f151c6c04238b15bb153d100ebb2",
+  "status": "ok",
+  "exit_code": 1,
+  "log_contains": [
+    "NOTE: Wrote contributions (42 rows, 2 columns).",
+    "NOTE: Table total_contributions_by_year created.",
+    "NOTE: Table joined_data1 created.",
+    "NOTE: PROC PRINT completed: 5 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": ["Variable report_year already exists on file WORK.JOINED_DATA1."]
+  }
+}
